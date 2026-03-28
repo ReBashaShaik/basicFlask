@@ -1,0 +1,13 @@
+header{
+    color:red;
+    background-color: aqua;
+    padding:4px;
+    text-align: center;
+}
+
+footer{
+    color:aqua;
+    background-color: rgb(241, 8, 8);
+    padding: 5px;
+    text-align: center;
+}

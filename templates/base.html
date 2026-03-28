@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}My Website{%endblock%}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    
+    <header>
+        <h1>My flask Website</h1>
+        <nav>
+            <a href="/">Home</a> |
+            <a href="/about">About</a>|
+            <a href="/contact">Contact</a>|
+        </nav>
+    </header>
+    <hr><hr>
+
+    <div>
+        {%block content%}
+
+            <!-- this is filled by child templates -->
+        {%endblock%}
+    </div>
+
+
+    <hr><hr>
+
+    <footer>
+        <p>Copyright@2026 all rights are reserved , webiste is developed by mahendra</p>
+    </footer>
+
+</body>
+</html>
